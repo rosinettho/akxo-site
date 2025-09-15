@@ -1,0 +1,141 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "home"
+        label: "Página Inicial"
+        file: "content/home.md"
+        fields:
+          - { label: "Título Principal", name: "title", widget: "string", default: "Akxone-se. Mude seu futuro." }
+          - { label: "Subtítulo", name: "subtitle", widget: "text", default: "A AKXO é mais que um app: é um sistema integrado de maestria comportamental." }
+          - { label: "Descrição", name: "description", widget: "markdown" }
+          - { label: "Texto Botão Principal", name: "cta_primary_text", widget: "string", default: "Começar Gratuitamente" }
+          - { label: "Link Botão Principal", name: "cta_primary_link", widget: "string", default: "https://app.akxo.com.br/signup" }
+          - { label: "Texto Botão Secundário", name: "cta_secondary_text", widget: "string", default: "Falar com Especialista" }
+          - { label: "Link Botão Secundário", name: "cta_secondary_link", widget: "string", default: "https://wa.me/5511999999999" }
+          - { label: "Imagem Hero", name: "hero_image", widget: "image", required: false }
+
+      - name: "about"
+        label: "Sobre"
+        file: "content/about.md"
+        fields:
+          - { label: "Título da Página", name: "title", widget: "string", default: "Sobre a AKXO" }
+          - { label: "Nome da Fundadora", name: "founder_name", widget: "string", default: "Rosí Nettho" }
+          - { label: "Descrição da Fundadora", name: "founder_description", widget: "text" }
+          - { label: "Foto da Fundadora", name: "founder_image", widget: "image", required: false }
+          - { label: "Missão", name: "mission", widget: "text" }
+          - { label: "Visão", name: "vision", widget: "text", required: false }
+          - { label: "Valores", name: "values", widget: "text", required: false }
+          - { label: "História", name: "story", widget: "markdown", required: false }
+
+      - name: "contact"
+        label: "Contato"
+        file: "content/contact.md"
+        fields:
+          - { label: "Título da Página", name: "title", widget: "string", default: "Entre em Contato" }
+          - { label: "Email Geral", name: "email_geral", widget: "string", default: "contato@akxo.com.br" }
+          - { label: "Email Suporte", name: "email_suporte", widget: "string", default: "suporte@akxo.com.br" }
+          - { label: "Email Comercial", name: "email_comercial", widget: "string", default: "comercial@akxo.com.br" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string", default: "+55 (11) 99999-9999" }
+          - { label: "Link WhatsApp", name: "whatsapp_link", widget: "string", default: "https://wa.me/5511999999999" }
+          - { label: "Endereço", name: "address", widget: "text", required: false }
+          - { label: "Horário de Funcionamento", name: "business_hours", widget: "text", required: false }
+
+  - name: "pricing"
+    label: "Planos"
+    files:
+      - name: "plans"
+        label: "Planos de Assinatura"
+        file: "content/pricing.md"
+        fields:
+          - { label: "Título da Seção", name: "title", widget: "string", default: "Escolha seu Plano" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text", required: false }
+          - label: "Plano Explorador"
+            name: "explorador"
+            widget: "object"
+            fields:
+              - { label: "Nome do Plano", name: "name", widget: "string", default: "Explorador" }
+              - { label: "Preço", name: "price", widget: "string", default: "R$ 0" }
+              - { label: "Período", name: "period", widget: "string", default: "/mês" }
+              - { label: "Descrição", name: "description", widget: "text", required: false }
+              - { label: "Recursos", name: "features", widget: "list", field: { label: "Recurso", name: "feature", widget: "string" } }
+              - { label: "Texto do Botão", name: "cta_text", widget: "string", default: "Começar Gratuitamente" }
+              - { label: "Link do Botão", name: "cta_link", widget: "string", default: "https://app.akxo.com.br/signup/free" }
+          - label: "Plano Atleta"
+            name: "atleta"
+            widget: "object"
+            fields:
+              - { label: "Nome do Plano", name: "name", widget: "string", default: "Atleta" }
+              - { label: "Preço", name: "price", widget: "string", default: "R$ 29,90" }
+              - { label: "Período", name: "period", widget: "string", default: "/mês" }
+              - { label: "Descrição", name: "description", widget: "text", required: false }
+              - { label: "Recursos", name: "features", widget: "list", field: { label: "Recurso", name: "feature", widget: "string" } }
+              - { label: "Texto do Botão", name: "cta_text", widget: "string", default: "Assinar Atleta" }
+              - { label: "Link do Botão", name: "cta_link", widget: "string", default: "https://app.akxo.com.br/signup/atleta" }
+          - label: "Plano Campeão"
+            name: "campeao"
+            widget: "object"
+            fields:
+              - { label: "Nome do Plano", name: "name", widget: "string", default: "Campeão" }
+              - { label: "Preço", name: "price", widget: "string", default: "R$ 59,90" }
+              - { label: "Período", name: "period", widget: "string", default: "/mês" }
+              - { label: "Descrição", name: "description", widget: "text", required: false }
+              - { label: "Recursos", name: "features", widget: "list", field: { label: "Recurso", name: "feature", widget: "string" } }
+              - { label: "Texto do Botão", name: "cta_text", widget: "string", default: "Assinar Campeão" }
+              - { label: "Link do Botão", name: "cta_link", widget: "string", default: "https://app.akxo.com.br/signup/campeao" }
+
+  - name: "settings"
+    label: "Configurações Gerais"
+    files:
+      - name: "global_settings"
+        label: "Configurações Globais"
+        file: "content/settings.md"
+        fields:
+          - { label: "Nome do Site", name: "site_name", widget: "string", default: "AKXO Academia de Habilidades" }
+          - { label: "Descrição do Site", name: "site_description", widget: "text", default: "Sistema integrado de maestria comportamental" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Favicon", name: "favicon", widget: "image", required: false }
+          - label: "Links de Download"
+            name: "app_downloads"
+            widget: "object"
+            fields:
+              - { label: "Link Android", name: "android", widget: "string", default: "https://play.google.com/store/apps/details?id=com.akxo.app" }
+              - { label: "Link iOS", name: "ios", widget: "string", default: "https://apps.apple.com/br/app/akxo/id123456789" }
+          - label: "Redes Sociais"
+            name: "social_media"
+            widget: "object"
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string", default: "https://instagram.com/akxoacademia" }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", default: "https://linkedin.com/company/akxo" }
+              - { label: "YouTube", name: "youtube", widget: "string", default: "https://youtube.com/@akxoacademia" }
+              - { label: "WhatsApp Suporte", name: "whatsapp_support", widget: "string", default: "https://wa.me/5511999999999" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Autor", name: "author", widget: "string", default: "Rosí Nettho" }
+      - { label: "Resumo", name: "excerpt", widget: "text" }
+      - { label: "Imagem Destacada", name: "featured_image", widget: "image", required: false }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Publicado", name: "published", widget: "boolean", default: true }
+      - label: "Call-to-Action"
+        name: "cta"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Texto", name: "text", widget: "string", default: "Comece sua jornada AKXO" }
+          - { label: "Link", name: "link", widget: "string", default: "https://app.akxo.com.br/signup" }
+
