@@ -1,0 +1,179 @@
+{
+  "name": "AKXO Academia de Habilidades",
+  "description": "Site da AKXO Academia de Habilidades - Sistema integrado de maestria comportamental",
+  "version": "1.0.0",
+  "framework": "react",
+  "build": {
+    "command": "npm run build",
+    "directory": "build"
+  },
+  "editor": {
+    "theme": "dark",
+    "preview": true
+  },
+  "content": {
+    "collections": [
+      {
+        "name": "pages",
+        "label": "Páginas",
+        "description": "Páginas principais do site",
+        "files": [
+          {
+            "name": "home",
+            "label": "Página Inicial",
+            "file": "src/components/Hero.jsx",
+            "fields": [
+              {
+                "name": "title",
+                "label": "Título Principal",
+                "widget": "string",
+                "default": "Akxone-se. Mude seu futuro."
+              },
+              {
+                "name": "subtitle",
+                "label": "Subtítulo",
+                "widget": "text",
+                "default": "A AKXO é mais que um app: é um sistema integrado de maestria comportamental."
+              },
+              {
+                "name": "description",
+                "label": "Descrição",
+                "widget": "markdown"
+              }
+            ]
+          },
+          {
+            "name": "about",
+            "label": "Sobre",
+            "file": "src/components/About.jsx",
+            "fields": [
+              {
+                "name": "founder_name",
+                "label": "Nome da Fundadora",
+                "widget": "string",
+                "default": "Rosí Nettho"
+              },
+              {
+                "name": "founder_description",
+                "label": "Descrição da Fundadora",
+                "widget": "text"
+              },
+              {
+                "name": "mission",
+                "label": "Missão",
+                "widget": "text"
+              }
+            ]
+          },
+          {
+            "name": "contact",
+            "label": "Contato",
+            "file": "src/components/ContatoPage.jsx",
+            "fields": [
+              {
+                "name": "email_geral",
+                "label": "Email Geral",
+                "widget": "string",
+                "default": "contato@akxo.com.br"
+              },
+              {
+                "name": "email_suporte",
+                "label": "Email Suporte",
+                "widget": "string",
+                "default": "suporte@akxo.com.br"
+              },
+              {
+                "name": "email_comercial",
+                "label": "Email Comercial",
+                "widget": "string",
+                "default": "comercial@akxo.com.br"
+              },
+              {
+                "name": "whatsapp",
+                "label": "WhatsApp",
+                "widget": "string",
+                "default": "+55 (11) 99999-9999"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pricing",
+        "label": "Planos",
+        "description": "Configuração dos planos de assinatura",
+        "files": [
+          {
+            "name": "plans",
+            "label": "Planos de Assinatura",
+            "file": "src/components/Pricing.jsx",
+            "fields": [
+              {
+                "name": "explorador_price",
+                "label": "Preço Explorador",
+                "widget": "string",
+                "default": "R$ 0"
+              },
+              {
+                "name": "atleta_price",
+                "label": "Preço Atleta",
+                "widget": "string",
+                "default": "R$ 29,90"
+              },
+              {
+                "name": "campeao_price",
+                "label": "Preço Campeão",
+                "widget": "string",
+                "default": "R$ 59,90"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "blog",
+        "label": "Blog",
+        "description": "Artigos do blog",
+        "folder": "src/blog",
+        "create": true,
+        "slug": "{{slug}}",
+        "fields": [
+          {
+            "name": "title",
+            "label": "Título",
+            "widget": "string"
+          },
+          {
+            "name": "date",
+            "label": "Data",
+            "widget": "datetime"
+          },
+          {
+            "name": "author",
+            "label": "Autor",
+            "widget": "string",
+            "default": "Rosí Nettho"
+          },
+          {
+            "name": "excerpt",
+            "label": "Resumo",
+            "widget": "text"
+          },
+          {
+            "name": "content",
+            "label": "Conteúdo",
+            "widget": "markdown"
+          }
+        ]
+      }
+    ]
+  },
+  "media": {
+    "folder": "public/images",
+    "public_folder": "/images"
+  },
+  "site_url": "https://akxo.com.br",
+  "display_url": "https://akxo.com.br",
+  "logo_url": "https://akxo.com.br/favicon.ico"
+}
+

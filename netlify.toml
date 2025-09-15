@@ -1,0 +1,43 @@
+[build]
+  publish = "."
+  command = "echo 'Site estático - sem build necessário'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Configuração para Netlify Create
+[context.production]
+  command = "echo 'Deploy de produção'"
+
+# Configuração de redirecionamentos para SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Configuração de headers para otimização
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers para arquivos estáticos
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Headers para imagens
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Configuração do Netlify Create
+[create]
+  enabled = true
+  config_file = "_create.json"
+
