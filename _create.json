@@ -39,6 +39,30 @@
                 "name": "description",
                 "label": "Descrição",
                 "widget": "markdown"
+              },
+              {
+                "name": "cta_primary_text",
+                "label": "Texto Botão Principal",
+                "widget": "string",
+                "default": "Começar Gratuitamente"
+              },
+              {
+                "name": "cta_primary_link",
+                "label": "Link Botão Principal",
+                "widget": "string",
+                "default": "https://app.akxo.com.br/signup"
+              },
+              {
+                "name": "cta_secondary_text",
+                "label": "Texto Botão Secundário",
+                "widget": "string",
+                "default": "Falar com Especialista"
+              },
+              {
+                "name": "cta_secondary_link",
+                "label": "Link Botão Secundário",
+                "widget": "string",
+                "default": "https://wa.me/5511999999999"
               }
             ]
           },
@@ -93,6 +117,12 @@
                 "label": "WhatsApp",
                 "widget": "string",
                 "default": "+55 (11) 99999-9999"
+              },
+              {
+                "name": "whatsapp_link",
+                "label": "Link WhatsApp",
+                "widget": "string",
+                "default": "https://wa.me/5511999999999"
               }
             ]
           }
@@ -115,16 +145,102 @@
                 "default": "R$ 0"
               },
               {
+                "name": "explorador_cta_text",
+                "label": "Texto Botão Explorador",
+                "widget": "string",
+                "default": "Começar Gratuitamente"
+              },
+              {
+                "name": "explorador_cta_link",
+                "label": "Link Botão Explorador",
+                "widget": "string",
+                "default": "https://app.akxo.com.br/signup/free"
+              },
+              {
                 "name": "atleta_price",
                 "label": "Preço Atleta",
                 "widget": "string",
                 "default": "R$ 29,90"
               },
               {
+                "name": "atleta_cta_text",
+                "label": "Texto Botão Atleta",
+                "widget": "string",
+                "default": "Assinar Atleta"
+              },
+              {
+                "name": "atleta_cta_link",
+                "label": "Link Botão Atleta",
+                "widget": "string",
+                "default": "https://app.akxo.com.br/signup/atleta"
+              },
+              {
                 "name": "campeao_price",
                 "label": "Preço Campeão",
                 "widget": "string",
                 "default": "R$ 59,90"
+              },
+              {
+                "name": "campeao_cta_text",
+                "label": "Texto Botão Campeão",
+                "widget": "string",
+                "default": "Assinar Campeão"
+              },
+              {
+                "name": "campeao_cta_link",
+                "label": "Link Botão Campeão",
+                "widget": "string",
+                "default": "https://app.akxo.com.br/signup/campeao"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "settings",
+        "label": "Configurações Gerais",
+        "description": "Links e configurações globais do site",
+        "files": [
+          {
+            "name": "global_links",
+            "label": "Links Globais",
+            "file": "src/config/links.json",
+            "fields": [
+              {
+                "name": "app_download_android",
+                "label": "Link Download Android",
+                "widget": "string",
+                "default": "https://play.google.com/store/apps/details?id=com.akxo.app"
+              },
+              {
+                "name": "app_download_ios",
+                "label": "Link Download iOS",
+                "widget": "string",
+                "default": "https://apps.apple.com/br/app/akxo/id123456789"
+              },
+              {
+                "name": "whatsapp_support",
+                "label": "WhatsApp Suporte",
+                "widget": "string",
+                "default": "https://wa.me/5511999999999"
+              },
+              {
+                "name": "social_instagram",
+                "label": "Instagram",
+                "widget": "string",
+                "default": "https://instagram.com/akxoacademia"
+              },
+              {
+                "name": "social_linkedin",
+                "label": "LinkedIn",
+                "widget": "string",
+                "default": "https://linkedin.com/company/akxo"
+              },
+              {
+                "name": "social_youtube",
+                "label": "YouTube",
+                "widget": "string",
+                "default": "https://youtube.com/@akxoacademia"
               }
             ]
           }
@@ -163,6 +279,18 @@
             "name": "content",
             "label": "Conteúdo",
             "widget": "markdown"
+          },
+          {
+            "name": "cta_text",
+            "label": "Texto Call-to-Action",
+            "widget": "string",
+            "default": "Comece sua jornada AKXO"
+          },
+          {
+            "name": "cta_link",
+            "label": "Link Call-to-Action",
+            "widget": "string",
+            "default": "https://app.akxo.com.br/signup"
           }
         ]
       }
