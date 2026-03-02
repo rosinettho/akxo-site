@@ -1,6 +1,6 @@
 ---
-site_name: "AKXO Academia de Habilidades"
-site_description: "Sistema integrado de maestria comportamental"
+site_name: "AKXO - Academia de Musculatura Comportamental"
+site_description: "A 1ª Academia de Musculatura Comportamental do Mundo. Treino diário, neurociência e gamificação para transformar soft skills em reflexos instintivos."
 logo: ""
 favicon: ""
 app_downloads:
