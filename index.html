@@ -6,6 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AKXO - Academia de Musculatura Comportamental</title>
     <script type="module" crossorigin src="assets/index-AKXO-V2.js"></script>
+    <script>
+      (function() {
+        function updateTexts() {
+          const replacements = [
+            // HOME - Posicionamento
+            { from: /Akxone-se\.  Mude seu futuro\./g, to: "AKXO: A 1ª Academia de Musculatura Comportamental do Mundo. Akxone-se!" },
+            { from: /Akxone-se\. Mude seu futuro\./g, to: "AKXO: A 1ª Academia de Musculatura Comportamental do Mundo. Akxone-se!" },
+            { from: /A AKXO é mais que um app: é um sistema integrado de maestria comportamental\./g, to: "O comportamento é um músculo. Quem estuda e não pratica, atrofia. Akxone-se!" },
+            { from: /"Sua mente é uma academia\. Treine suas habilidades comportamentais com a ciência da neuroplasticidade\."/g, to: '"O comportamento é um músculo. Quem estuda e não pratica, atrofia. Akxone-se!"' },
+            
+            // PLANOS - Títulos e Preços
+            { from: /Escolha Seu Plano de Maestria/g, to: "Escolha seu Plano de Tonificação Comportamental" },
+            { from: /Escolha seu Plano de Maestria/g, to: "Escolha seu Plano de Tonificação Comportamental" },
+            { from: /R\$ 29,90/g, to: "R$ 49,90" },
+            { from: /R\$ 59,90/g, to: "R$ 69,90" },
+            { from: /3 AkxoTreinos introdutórios/g, to: "Temporada 1 de todas as Maratonas" },
+            
+            // Termos Gerais
+            { from: /Radar de Habilidades/g, to: "Radar de Tonificação" },
+            { from: /Mapeamento Comportamental/g, to: "Bioimpedância Comportamental" },
+            { from: /Circuitos de Habilidades/g, to: "Circuitos de Maratonas" },
+            { from: /maestria comportamental/g, to: "musculatura comportamental" },
+            { from: /soft skills/g, to: "musculatura comportamental" }
+          ];
+
+          function walk(node) {
+            if (node.nodeType === 3) { // Text node
+              let text = node.nodeValue;
+              let changed = false;
+              replacements.forEach(r => {
+                if (r.from.test(text)) {
+                  text = text.replace(r.from, r.to);
+                  changed = true;
+                }
+              });
+              if (changed) node.nodeValue = text;
+            } else if (node.nodeType === 1 && node.tagName !== "SCRIPT" && node.tagName !== "STYLE") {
+              node.childNodes.forEach(walk);
+            }
+          }
+
+          walk(document.body);
+        }
+
+        // Executa várias vezes para lidar com carregamento assíncrono do React
+        const interval = setInterval(updateTexts, 500);
+        setTimeout(() => clearInterval(interval), 10000);
+        
+        // Também observa mudanças no DOM
+        const observer = new MutationObserver(updateTexts);
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
     <link rel="stylesheet" crossorigin href="assets/index-BGbEBAIJ.css">
   </head>
   <body>
