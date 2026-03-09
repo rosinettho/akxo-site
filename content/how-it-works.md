@@ -14,7 +14,7 @@ Preencha o Primeiro Impulso assim que entrar na academia. Ele alimenta o Mestre 
 
 ## Passo 2: Bioimpedância Comportamental
 
-Reserve 15 minutos e realize sua Bioimpedância Comportamental. Este diagnóstico inicial revela quais músculos comportamentais estão hipertrofiados ou atrofiados, orientando toda a sua jornada de Akxonamento.
+Reserve 7 minutos e realize sua Bioimpedância Comportamental. Este diagnóstico inicial revela quais músculos comportamentais estão hipertrofiados ou atrofiados, orientando toda a sua jornada de Akxonamento.
 
 ## Passo 3: Mapeamento Comportamental
 
@@ -22,11 +22,11 @@ Realize uma análise profunda de seu perfil único através de metodologias reco
 
 ## Passo 4: Radar de Tonificação
 
-Responda ao questionário de habilidades para estabelecer seu **IHi (Índice de Habilidade Inicial)**. Este será seu ponto de partida. Conforme seus treinos forem praticados, seu **IEH (Índice de Evolução de Habilidade)** evoluirá, mostrando o crescimento da sua musculatura comportamental.
+Acompanhe o seu **IHi (Índice de Habilidade Inicial)**. Este será seu ponto de partida. Conforme seus treinos forem praticados, seu **IEH (Índice de Evolução de Habilidade)** evoluirá, mostrando o crescimento da sua musculatura comportamental.
 
-## Passo 5: AkxoTreinos
+## Passo 5: Maratona
 
-Escolha os AkxoTreinos que mais combinam com seus objetivos. Cada treino é uma série de micro-ações orientadas pelo Akxinho em vídeos curtos com ferramentas interativas. Dedique apenas 7 minutos por dia para construir sua fluidez comportamental.
+Escolha uma Maratona e inicie o AkxoTreino que mais combina com seus objetivos. Cada AkxoTreino é uma série de treinos diários com 7 passos e micro-ações orientadas pelo Akxinho de forma interativa e gamificada. Dedique 7 minutos por dia para construir **Muscualtura e Fluidez comportamental**.
 
 ## Passo 6: Arena de Simulação
 
@@ -54,11 +54,9 @@ Visualize gráficos detalhados do seu progresso em cada habilidade. É o centro 
 
 ## Passo 12: Rede de Retorno (Feedback 360)
 
-Receba avaliações reais de pessoas ao seu redor. O feedback externo reduz seus pontos cegos, valida sua evolução e ajuda você a entender seu impacto real. A realidade acelera a evolução.
+Adicione **Observadores** e receba avaliações reais de pessoas ao seu redor. O feedback externo reduz seus pontos cegos, valida sua evolução e ajuda você a entender seu impacto real. **A realidade acelera a evolução.**
 
-## Passo 13: Centro Estratégico (Para Empresas)
 
-Se você é gestor ou líder, ative o Centro Estratégico para desenvolver equipes com dashboards e relatórios avançados. Acompanhe a evolução coletiva, identifique lacunas comportamentais e crie uma cultura de treino contínuo.
 
 ---
 
