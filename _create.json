@@ -1,6 +1,6 @@
 {
-  "name": "AKXO Academia de Habilidades",
-  "description": "Site da AKXO Academia de Habilidades - Sistema integrado de maestria comportamental",
+  "name": "AKXO",
+  "description": "Site da AKXO Academia de Musculatura Comportamental - Academia de Musculatura comportamental",
   "version": "1.0.0",
   "framework": "react",
   "build": {
@@ -33,7 +33,7 @@
                 "name": "subtitle",
                 "label": "Subtítulo",
                 "widget": "text",
-                "default": "A AKXO é mais que um app: é um sistema integrado de maestria comportamental."
+                "default": "A AKXO é mais que um app: é uma **Academia de Musculatura Comportamental** "
               },
               {
                 "name": "description",
@@ -160,7 +160,7 @@
                 "name": "atleta_price",
                 "label": "Preço Atleta",
                 "widget": "string",
-                "default": "R$ 29,90"
+                "default": "R$ 49,90"
               },
               {
                 "name": "atleta_cta_text",
@@ -178,7 +178,7 @@
                 "name": "campeao_price",
                 "label": "Preço Campeão",
                 "widget": "string",
-                "default": "R$ 59,90"
+                "default": "R$ 69,90"
               },
               {
                 "name": "campeao_cta_text",
