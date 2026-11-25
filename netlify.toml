@@ -1,13 +1,20 @@
 [build]
   publish = "."
-  command = "echo 'Site estatico AKXO - sem build'"
+  command = "echo 'Site estatico AKXO - sem etapa de build'"
 
 [build.environment]
   NODE_VERSION = "20"
 
-# Este site tem PAGINAS REAIS (index, metodo, blog/*).
-# O redirect de SPA do Manus (/* -> /index.html) engolia todas elas.
-# Fica apenas o espelho de www para o dominio raiz.
+# O repositorio tem PAGINAS REAIS (index, metodo, blog/*) e nenhum passo de
+# build. Qualquer comando de npm aqui falha, porque o repo NAO tem package.json.
+# Este bloco precisa continuar com o publish em "." — o Netlify publica o que
+# esta na raiz do repositorio.
+
+[[redirects]]
+  from = "https://www.akxo.com.br/*"
+  to = "https://akxo.com.br/:splat"
+  status = 301
+  force = true
 
 [[headers]]
   for = "/*"
@@ -23,6 +30,6 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/index.html"
+  for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"

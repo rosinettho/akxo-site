@@ -2,10 +2,10 @@
   "name": "AKXO",
   "description": "Site da AKXO Academia de Musculatura Comportamental - Academia de Musculatura comportamental",
   "version": "1.0.0",
-  "framework": "react",
+  "framework": "static",
   "build": {
-    "command": "npm run build",
-    "directory": "build"
+    "command": "echo 'Site estatico - sem build'",
+    "directory": "."
   },
   "editor": {
     "theme": "dark",
@@ -304,4 +304,3 @@
   "display_url": "https://akxo.com.br",
   "logo_url": "https://akxo.com.br/favicon.ico"
 }
-
