@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Por que saber o que fazer não significa conseguir fazer</title>
+<meta name="description" content="O conhecimento muda o que você entende. Não muda o que você faz no momento em que a situação aperta.">
+<link rel="canonical" href="https://akxo.com.br/blog/por-que-saber-nao-significa-conseguir-fazer.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AKXO">
+<meta property="og:title" content="Por que saber o que fazer não significa conseguir fazer">
+<meta property="og:description" content="O conhecimento muda o que você entende. Não muda o que você faz no momento em que a situação aperta.">
+<meta property="og:url" content="https://akxo.com.br/blog/por-que-saber-nao-significa-conseguir-fazer.html">
+<meta property="og:image" content="https://akxo.com.br/assets/og.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="../assets/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --branco:#FFFFFF; --branco2:#FBFCFE; --gelo:#F2F5FA;
+  --roxo:#5153D4; --roxo-esc:#3032C0; --roxo-md:#4648CC; --roxo-cl:#6E70E8;
+  --teal:#047185; --teal-md:#0A7F94; --teal-cl:#139AA8;
+  --laranja:#F5822B; --laranja-esc:#B85E12;
+  --tinta:#080C18; --texto:#2B3548; --apoio:#5A6577; --linha:#E4E9F1;
+  --display:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --sombra:0 2px 8px rgba(8,12,24,.05),0 12px 32px rgba(8,12,24,.06);
+  --sombra-forte:0 4px 14px rgba(48,50,192,.14),0 18px 48px rgba(48,50,192,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--branco);color:var(--texto);font-family:var(--sans);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);letter-spacing:-.03em;line-height:1.1;color:var(--tinta)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{position:relative}
+.grad{background:linear-gradient(96deg,var(--roxo-esc) 0%,#5B5EDC 42%,var(--teal-md) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* ---------- NAV ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(16px);border-bottom:1px solid var(--linha)}
+.nav-in{display:flex;align-items:center;gap:28px;height:74px}
+.nav img.lg{height:27px;width:auto}
+.nav-links{display:flex;gap:24px;margin-left:auto;font-size:14px;font-weight:500;color:var(--apoio)}
+.nav-links a:hover{color:var(--roxo-esc)}
+.nav-cta{font-family:var(--display);font-size:13.5px;font-weight:700;padding:11px 21px;
+  border-radius:9px;color:#fff;background:linear-gradient(135deg,var(--roxo-esc),var(--roxo));
+  box-shadow:0 4px 14px rgba(48,50,192,.28);transition:.2s}
+.nav-cta:hover{box-shadow:0 6px 24px rgba(48,50,192,.42);transform:translateY(-1px)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ---------- HERO ---------- */
+.hero{padding:76px 0 40px;overflow:hidden;background:var(--branco)}
+.hero-blob{position:absolute;border-radius:50%;filter:blur(72px);pointer-events:none;z-index:0}
+.b1{width:540px;height:540px;top:-190px;right:-120px;
+  background:radial-gradient(circle,rgba(81,83,212,.30),transparent 68%)}
+.b2{width:460px;height:460px;top:-60px;left:-190px;
+  background:radial-gradient(circle,rgba(19,154,168,.26),transparent 68%)}
+.b3{width:400px;height:400px;top:330px;right:180px;
+  background:radial-gradient(circle,rgba(245,130,43,.16),transparent 70%)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.06fr .94fr;
+  gap:44px;align-items:center}
+
+.selo{display:inline-flex;align-items:center;gap:10px;padding:8px 17px 8px 9px;
+  border-radius:100px;margin-bottom:24px;background:#fff;
+  border:1.5px solid transparent;
+  background-image:linear-gradient(#fff,#fff),linear-gradient(100deg,var(--roxo),var(--teal-md));
+  background-origin:border-box;background-clip:padding-box,border-box;
+  box-shadow:0 6px 22px rgba(81,83,212,.16)}
+.selo-ic{display:flex;align-items:center;justify-content:center;width:26px;height:26px;
+  border-radius:50%;background:linear-gradient(135deg,var(--roxo),var(--teal-cl));
+  font-size:11.5px;font-weight:800;color:#fff;font-family:var(--display)}
+.selo-t{font-family:var(--display);font-size:11.5px;font-weight:800;letter-spacing:.055em;
+  text-transform:uppercase;color:var(--roxo-esc)}
+@media(max-width:600px){.selo-t{font-size:9.5px;letter-spacing:.02em}.selo{padding:7px 13px 7px 7px}}
+
+.hero h1{font-size:clamp(34px,4.6vw,60px);font-weight:800;color:var(--tinta);line-height:1.06}
+.hero p.sub{font-size:clamp(15.5px,1.4vw,18.5px);color:var(--apoio);margin-top:22px;max-width:560px}
+
+.nao{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.nao span{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;
+  color:#8A3A1A;background:#FEF2EA;border:1px solid #F9D6BE;padding:6px 12px;border-radius:8px}
+.nao span i{font-style:normal;color:#D9532A;font-weight:800;font-size:11px}
+
+.hero-acts{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);
+  font-size:15px;font-weight:700;padding:15px 27px;border-radius:11px;
+  transition:.2s;border:1.5px solid transparent;cursor:pointer}
+.btn-pri{color:#fff;background:linear-gradient(135deg,var(--roxo-esc) 0%,var(--roxo) 55%,#5F62E0 100%);
+  box-shadow:0 6px 20px rgba(48,50,192,.30)}
+.btn-pri:hover{box-shadow:0 10px 32px rgba(48,50,192,.44);transform:translateY(-2px)}
+.btn-sec{background:#fff;color:var(--tinta);border-color:var(--linha);
+  box-shadow:0 2px 8px rgba(8,12,24,.06)}
+.btn-sec:hover{border-color:var(--roxo-cl);color:var(--roxo-esc);
+  box-shadow:0 6px 20px rgba(81,83,212,.18)}
+.hero-note{font-size:12.5px;color:var(--apoio);margin-top:16px}
+.hero-note b{color:var(--roxo-esc)}
+
+/* arte do hero: mascote + tela real flutuando */
+.hero-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:430px}
+.art-halo{position:absolute;width:390px;height:390px;border-radius:50%;
+  background:radial-gradient(circle,rgba(81,83,212,.20) 0%,rgba(19,154,168,.13) 46%,transparent 70%);
+  filter:blur(26px)}
+.art-anel{position:absolute;width:330px;height:330px;border-radius:50%;
+  border:1.5px dashed rgba(81,83,212,.26)}
+.art-anel.a2{width:270px;height:270px;border:1px solid rgba(19,154,168,.22)}
+.mascote{position:relative;z-index:2;width:min(100%,250px);height:auto;
+  filter:drop-shadow(0 20px 44px rgba(81,83,212,.30))}
+.tela-hero{position:absolute;z-index:3;right:-6px;bottom:-24px;width:168px;
+  border-radius:20px;transform:rotate(-6deg);
+  box-shadow:0 8px 20px rgba(8,12,24,.10),0 26px 60px rgba(48,50,192,.22);
+  border:3px solid #fff}
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr;gap:44px}
+  .hero-art{order:1;min-height:330px;margin-top:8px}
+  .mascote{width:min(56%,180px)}
+  .tela-hero{width:132px;right:2px;bottom:-10px}
+  .art-halo,.art-anel{width:250px;height:250px}
+}
+
+/* ---------- FAIXA DE PROVA ---------- */
+.prova{margin-top:34px;border-radius:18px;overflow:hidden;
+  background:linear-gradient(100deg,#0B1030 0%,#1A1D6E 46%,#063C4A 100%);
+  box-shadow:0 14px 40px rgba(8,12,24,.18)}
+.prova-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.prova-in>div{padding:24px 18px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.10)}
+.prova-in>div:last-child{border-right:0}
+.prova b{display:block;font-family:var(--display);font-size:24px;font-weight:800;
+  color:#fff;line-height:1}
+.prova span{display:block;font-size:11.5px;color:#A9B4D8;margin-top:8px;line-height:1.4}
+@media(max-width:760px){.prova-in{grid-template-columns:1fr 1fr}
+  .prova-in>div:nth-child(2){border-right:0}
+  .prova-in>div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.10)}}
+
+/* ---------- SEÇÕES ---------- */
+.sec{padding:92px 0}
+.sec-h{text-align:center;max-width:740px;margin:0 auto 50px}
+.sec-k{display:inline-block;font-family:var(--display);font-size:11.5px;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--roxo-esc);
+  background:#EEF0FE;border-radius:100px;padding:7px 15px;margin-bottom:16px}
+.sec-h h2{font-size:clamp(27px,3.4vw,42px);font-weight:800}
+.sec-h p{color:var(--apoio);margin-top:16px;font-size:16.5px}
+
+/* ---------- TELAS DO APP ---------- */
+.telas-sec{background:linear-gradient(180deg,#FFFFFF 0%,#F4F7FC 60%,#FFFFFF 100%);
+  padding:88px 0 96px;overflow:hidden}
+.telas{display:flex;gap:24px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.tela-c{position:relative;width:222px;flex:0 0 auto}
+.tela-c:nth-child(1){transform:rotate(-4deg) translateY(18px)}
+.tela-c:nth-child(2){transform:rotate(0deg) translateY(-8px);z-index:2}
+.tela-c:nth-child(3){transform:rotate(4deg) translateY(18px)}
+.tela-c img{width:100%;border-radius:20px;display:block;
+  box-shadow:0 6px 16px rgba(8,12,24,.08),0 22px 52px rgba(48,50,192,.16);
+  border:3px solid #fff;transition:.3s}
+.tela-c:hover img{transform:translateY(-8px) scale(1.02);
+  box-shadow:0 10px 24px rgba(8,12,24,.10),0 32px 70px rgba(48,50,192,.26)}
+.tela-leg{margin-top:14px;text-align:center;font-size:12.5px;font-weight:600;color:var(--apoio)}
+.tela-leg b{display:block;font-family:var(--display);font-size:13.5px;color:var(--tinta);margin-bottom:3px}
+@media(max-width:800px){
+  .telas{gap:14px}
+  .tela-c{width:150px}
+  .tela-c:nth-child(n){transform:none}
+  .tela-c:nth-child(3){display:none}
+}
+
+/* ---------- NÃO É VÍDEOAULA ---------- */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:860px){.vs{grid-template-columns:1fr}}
+.vs-col{padding:32px 28px;border-radius:16px}
+.vs-nao{background:var(--branco2);border:1.5px solid var(--linha)}
+.vs-sim{background:linear-gradient(152deg,rgba(81,83,212,.075),rgba(19,154,168,.055));
+  border:1.5px solid rgba(81,83,212,.34);box-shadow:0 10px 34px rgba(81,83,212,.13)}
+.vs-h{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:12px;
+  font-weight:800;letter-spacing:.075em;text-transform:uppercase;margin-bottom:20px}
+.vs-nao .vs-h{color:#7C8798}
+.vs-sim .vs-h{color:var(--roxo-esc)}
+.vs-h i{font-style:normal;display:flex;align-items:center;justify-content:center;
+  width:22px;height:22px;border-radius:50%;font-size:11px}
+.vs-nao .vs-h i{background:#EAEEF5;color:#6B7686}
+.vs-sim .vs-h i{background:linear-gradient(135deg,var(--roxo),var(--teal-md));color:#fff}
+.vs-item{display:flex;gap:11px;margin-bottom:13px;font-size:14.5px;line-height:1.55}
+.vs-item:last-child{margin-bottom:0}
+.vs-nao .vs-item{color:#6B7686}
+.vs-sim .vs-item{color:#26313F}
+.vs-dot{flex:0 0 auto;width:5px;height:5px;border-radius:50%;margin-top:9px}
+.vs-nao .vs-dot{background:#C0C8D4}
+.vs-sim .vs-dot{background:var(--teal-md)}
+
+/* ---------- NEUROPLASTICIDADE ---------- */
+.neuro{background:linear-gradient(100deg,#0B1030 0%,#191C66 48%,#063C4A 100%);
+  padding:92px 0;overflow:hidden;color:#fff}
+.neuro::before{content:'';position:absolute;inset:0;opacity:.55;
+  background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.13) 1px,transparent 0);
+  background-size:26px 26px;
+  mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000,transparent 75%)}
+.neuro-in{position:relative;z-index:1;display:grid;grid-template-columns:.94fr 1.06fr;
+  gap:52px;align-items:center}
+@media(max-width:900px){.neuro-in{grid-template-columns:1fr;gap:34px}}
+.neuro h2{font-size:clamp(27px,3.3vw,40px);font-weight:800;color:#fff}
+.neuro h2 em{font-style:normal;
+  background:linear-gradient(96deg,#9FA1FF,#5FE0F0);-webkit-background-clip:text;
+  background-clip:text;-webkit-text-fill-color:transparent}
+.neuro p{color:#B4BEDC;margin-top:18px;font-size:16px}
+.trad{margin-top:22px;padding:18px 20px;border-radius:12px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(95,224,240,.34);
+  font-size:14.5px;color:#D5DCF0;line-height:1.62;backdrop-filter:blur(8px)}
+.trad b{color:#5FE0F0}
+.trilha{display:flex;flex-direction:column;gap:13px}
+.tl{display:flex;align-items:flex-start;gap:15px;padding:17px 19px;border-radius:12px;
+  background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);transition:.2s}
+.tl:hover{background:rgba(255,255,255,.13);border-color:rgba(95,224,240,.42)}
+.tl-n{flex:0 0 auto;width:31px;height:31px;border-radius:9px;display:flex;align-items:center;
+  justify-content:center;font-family:var(--display);font-size:13px;font-weight:800;
+  background:linear-gradient(135deg,#6E70E8,#139AA8);color:#fff}
+.tl-b h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.tl-b p{font-size:13.5px;color:#A9B4D8;margin:0}
+
+/* ---------- TRÊS PORTAS ---------- */
+.portas-g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:980px){.portas-g3{grid-template-columns:1fr}}
+.porta{position:relative;padding:32px 28px;border-radius:17px;background:#fff;
+  border:1.5px solid var(--linha);box-shadow:var(--sombra);transition:.24s;
+  display:flex;flex-direction:column}
+.porta:hover{transform:translateY(-4px)}
+.porta-ic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;
+  justify-content:center;font-size:20px;margin-bottom:16px}
+.porta.p1 .porta-ic{background:#EEF0FE;color:var(--roxo-esc)}
+.porta.p2 .porta-ic{background:#E6F6F9;color:var(--teal)}
+.porta.p3 .porta-ic{background:#FEF2E6;color:var(--laranja-esc)}
+.porta-k{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;margin-bottom:9px}
+.porta.p1 .porta-k{color:var(--roxo-esc)}
+.porta.p2 .porta-k{color:var(--teal)}
+.porta.p3 .porta-k{color:var(--laranja-esc)}
+.porta h3{font-size:21px;font-weight:800;margin-bottom:10px}
+.porta p{color:var(--apoio);font-size:14px;margin-bottom:18px}
+.porta ul{list-style:none;margin-bottom:22px;flex:1}
+.porta li{font-size:13.5px;color:#39445A;padding-left:20px;position:relative;margin-bottom:8px}
+.porta li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%}
+.porta.p1 li::before{background:var(--roxo)}
+.porta.p2 li::before{background:var(--teal-md)}
+.porta.p3 li::before{background:var(--laranja)}
+.porta-link{font-family:var(--display);font-size:14px;font-weight:700;color:var(--roxo-esc);
+  display:inline-flex;align-items:center;gap:7px}
+.porta.p2 .porta-link{color:var(--teal)}
+.porta.p3 .porta-link{color:var(--laranja-esc)}
+.porta.p1:hover{border-color:rgba(81,83,212,.48);box-shadow:var(--sombra-forte)}
+.porta.p2:hover{border-color:rgba(4,113,133,.45);box-shadow:0 4px 14px rgba(4,113,133,.14),0 18px 48px rgba(4,113,133,.16)}
+.porta.p3:hover{border-color:rgba(245,130,43,.5);box-shadow:0 4px 14px rgba(245,130,43,.14),0 18px 48px rgba(245,130,43,.16)}
+.portas-nota{margin-top:22px;padding:18px 21px;border-radius:12px;font-size:13.5px;
+  line-height:1.7;color:var(--texto);background:var(--gelo);border:1px solid var(--linha)}
+.portas-nota b{color:var(--tinta)}
+
+/* ---------- COMO FUNCIONA ---------- */
+.como{background:var(--gelo);border-top:1px solid var(--linha)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+@media(max-width:940px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{padding:26px 22px;border-radius:14px;background:#fff;border:1.5px solid var(--linha);
+  box-shadow:0 2px 8px rgba(8,12,24,.045);transition:.2s;position:relative;overflow:hidden}
+.step::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--roxo),var(--teal-cl))}
+.step:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(81,83,212,.16)}
+.step-n{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.12em;
+  color:var(--teal-md);margin-bottom:12px}
+.step h4{font-size:16px;font-weight:700;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--apoio)}
+
+/* ---------- BORDÃO ---------- */
+.bordao{padding:96px 0;text-align:center;overflow:hidden;background:#fff;position:relative}
+.bordao::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:860px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(81,83,212,.14),rgba(19,154,168,.07) 46%,transparent 68%);
+  filter:blur(46px)}
+.bordao-in{position:relative;z-index:1}
+.bordao h2{font-size:clamp(25px,3.6vw,44px);font-weight:800;line-height:1.24;
+  max-width:790px;margin:0 auto;color:var(--tinta)}
+.bordao .btn{margin-top:32px}
+
+/* ---------- FOOTER ---------- */
+footer{padding:60px 0 38px;background:linear-gradient(180deg,#0B1030,#060A20);color:#fff}
+.foot{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:840px){.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot{grid-template-columns:1fr}}
+.foot img.lg{height:26px;margin-bottom:14px}
+.foot .selo-mini{display:inline-block;font-family:var(--display);font-size:10px;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;color:#A9B4FF;
+  border:1px solid rgba(169,180,255,.36);border-radius:5px;padding:4px 9px;margin-bottom:14px}
+.foot p{font-size:13px;color:#98A3C0;max-width:290px}
+.foot h5{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:#fff;margin-bottom:13px}
+.foot ul{list-style:none}
+.foot li{margin-bottom:8px}
+.foot a{font-size:13px;color:#98A3C0}
+.foot a:hover{color:#fff}
+.legal{margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#8B96AB}
+
+.revisao{position:fixed;bottom:16px;left:16px;z-index:99;font-size:11px;font-weight:700;
+  letter-spacing:.04em;color:#fff;background:linear-gradient(135deg,var(--roxo-esc),var(--roxo));
+  padding:7px 14px;border-radius:100px;box-shadow:0 6px 22px rgba(48,50,192,.42)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:600px){.revisao{font-size:9px;padding:5px 10px;bottom:10px;left:10px;opacity:.85}}
+
+/* ---------- MOTORES (maratona, espelho, pulso) ---------- */
+.motores{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:980px){.motores{grid-template-columns:1fr}}
+.motor{padding:30px 27px;border-radius:17px;background:#fff;border:1.5px solid var(--linha);
+  box-shadow:var(--sombra);transition:.24s;position:relative;overflow:hidden}
+.motor::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.motor.m1::before{background:linear-gradient(90deg,var(--roxo),var(--roxo-cl))}
+.motor.m2::before{background:linear-gradient(90deg,var(--teal),var(--teal-cl))}
+.motor.m3::before{background:linear-gradient(90deg,var(--laranja),#F9A961)}
+.motor:hover{transform:translateY(-4px);box-shadow:var(--sombra-forte)}
+.motor-top{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.motor-ic{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;
+  justify-content:center;font-size:18px;background:var(--gelo)}
+.motor-tag{font-family:var(--display);font-size:10px;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--apoio);background:var(--gelo);
+  padding:5px 11px;border-radius:100px}
+.motor h3{font-size:20px;font-weight:800;margin-bottom:7px}
+.motor-sub{font-size:13.5px;font-weight:600;color:var(--roxo-esc);margin-bottom:12px;line-height:1.45}
+.motor.m2 .motor-sub{color:var(--teal)}
+.motor.m3 .motor-sub{color:var(--laranja-esc)}
+.motor p{font-size:14px;color:var(--apoio);line-height:1.6;margin-bottom:14px}
+.motor-list{list-style:none;margin-bottom:16px}
+.motor-list li{font-size:13px;color:#39445A;padding-left:17px;position:relative;
+  margin-bottom:7px;line-height:1.5}
+.motor-list li::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;
+  border-radius:50%;background:var(--roxo-cl)}
+.motor.m2 .motor-list li::before{background:var(--teal-cl)}
+.motor.m3 .motor-list li::before{background:var(--laranja)}
+.motor-list b{color:var(--tinta)}
+.motor-frase{font-family:var(--display);font-size:12.5px;font-weight:700;color:var(--tinta);
+  padding-top:14px;border-top:1px solid var(--linha);line-height:1.5}
+
+/* ---------- AKXOPULSO ---------- */
+.pulso-sec{padding:96px 0;background:linear-gradient(100deg,#08222C 0%,#0B3B4A 55%,#123A6B 100%);
+  overflow:hidden;position:relative}
+.pulso-sec::before{content:'';position:absolute;inset:0;opacity:.4;
+  background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.14) 1px,transparent 0);
+  background-size:28px 28px;
+  mask-image:radial-gradient(ellipse 70% 70% at 30% 40%,#000,transparent 78%)}
+.pulso-in{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;
+  gap:50px;align-items:center}
+@media(max-width:940px){.pulso-in{grid-template-columns:1fr;gap:40px}}
+.pulso-txt h2{font-size:clamp(26px,3.3vw,40px);font-weight:800;color:#fff;line-height:1.14}
+.pulso-txt .grad{background:linear-gradient(96deg,#8FB4FF,#5FE0F0);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pulso-txt p{color:#B6C6D8;margin-top:18px;font-size:16px}
+.pulso-frases{margin-top:26px;display:flex;flex-direction:column;gap:13px}
+.pf{display:flex;gap:13px;padding:16px 18px;border-radius:12px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(95,224,240,.24)}
+.pf-ic{font-size:18px;line-height:1.3}
+.pf b{display:block;font-family:var(--display);font-size:14px;font-weight:700;color:#fff;
+  line-height:1.45;margin-bottom:3px}
+.pf span{font-size:12.5px;color:#A9BED4;line-height:1.5}
+.pulso-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:460px}
+.pt{width:196px;border-radius:22px;border:3px solid rgba(255,255,255,.9);
+  box-shadow:0 10px 26px rgba(0,0,0,.30),0 34px 70px rgba(0,0,0,.42);transition:.3s}
+.pt1{transform:rotate(-7deg) translate(28px,20px);z-index:1}
+.pt2{transform:rotate(6deg) translate(-28px,-10px);z-index:2}
+.pt:hover{transform:translateY(-8px) rotate(0deg) scale(1.03);z-index:3}
+@media(max-width:940px){.pulso-art{min-height:380px}
+  .pt{width:155px}
+  .pt1{transform:rotate(-8deg) translate(20px,14px)}
+  .pt2{transform:rotate(7deg) translate(-20px,-8px)}}
+
+/* ---------- MAPEAMENTO COMPORTAMENTAL ---------- */
+.dims{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:30px}
+@media(max-width:900px){.dims{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.dims{grid-template-columns:1fr}}
+.dim{padding:24px 20px;border-radius:15px;background:#fff;border:1.5px solid var(--linha);
+  box-shadow:0 2px 8px rgba(8,12,24,.05);transition:.22s;position:relative;overflow:hidden}
+.dim:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(8,12,24,.10)}
+.dim::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.dim.d-d::before{background:#D93F35}
+.dim.d-i::before{background:#E8A03A}
+.dim.d-s::before{background:#2E9E6B}
+.dim.d-c::before{background:#3A6FD8}
+.dim-letra{font-family:var(--display);font-size:32px;font-weight:800;line-height:1;margin-bottom:8px}
+.dim.d-d .dim-letra{color:#C4342B}
+.dim.d-i .dim-letra{color:#A8680F}
+.dim.d-s .dim-letra{color:#1D6E49}
+.dim.d-c .dim-letra{color:#2C5AB4}
+.dim-nome{font-family:var(--display);font-size:16px;font-weight:800;color:var(--tinta);margin-bottom:4px}
+.dim-verbo{font-size:12.5px;color:var(--apoio);margin-bottom:12px}
+.dim-forca{font-size:11.5px;color:#1D6E49;font-weight:600;margin-bottom:4px}
+.dim-atrof{font-size:11.5px;color:#A8362C;font-weight:600}
+
+.trein-descomp{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;margin-bottom:20px}
+@media(max-width:820px){.trein-descomp{grid-template-columns:1fr}.td-seta{text-align:center;max-width:none}}
+.td-lado{padding:26px 24px;border-radius:15px}
+.td-bom{background:linear-gradient(155deg,rgba(46,158,107,.09),rgba(46,158,107,.03));
+  border:1.5px solid rgba(46,158,107,.34)}
+.td-ruim{background:linear-gradient(155deg,rgba(217,63,53,.07),rgba(217,63,53,.02));
+  border:1.5px solid rgba(217,63,53,.28)}
+.td-tit{font-family:var(--display);font-size:11.5px;font-weight:800;letter-spacing:.075em;
+  text-transform:uppercase;margin-bottom:14px}
+.td-bom .td-tit{color:#1D6E49}
+.td-ruim .td-tit{color:#A8362C}
+.td-palavras{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px}
+.td-palavras span{font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:100px;background:#fff;border:1px solid var(--linha)}
+.td-bom .td-palavras span{color:#1D6E49;border-color:rgba(46,158,107,.3)}
+.td-ruim .td-palavras span{color:#A8362C;border-color:rgba(217,63,53,.26)}
+.td-nota{font-size:12px;color:var(--apoio);line-height:1.55}
+.td-seta{display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  font-size:11px;font-weight:700;color:var(--apoio);text-align:center;max-width:80px;line-height:1.4}
+.mapeamento-nota{padding:19px 22px;border-radius:13px;background:var(--gelo);
+  border:1px solid var(--linha);font-size:14px;line-height:1.7;color:var(--texto);margin-bottom:52px}
+.mapeamento-nota b{color:var(--tinta)}
+
+.arq-bloco{margin-bottom:52px}
+.arq-h{text-align:center;margin-bottom:26px}
+.arq-h h3{font-size:clamp(20px,2.4vw,27px);font-weight:800}
+.arq-h p{color:var(--apoio);font-size:14.5px;margin-top:9px}
+.arq-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:9px}
+@media(max-width:1000px){.arq-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.arq-grid{grid-template-columns:repeat(2,1fr)}}
+.arq{padding:14px 9px;border-radius:11px;background:#fff;border:1.5px solid var(--linha);
+  text-align:center;transition:.18s}
+.arq:hover{border-color:var(--roxo-cl);box-shadow:0 6px 20px rgba(81,83,212,.16);transform:translateY(-2px)}
+.arq span{display:block;font-family:var(--display);font-size:9.5px;font-weight:800;
+  letter-spacing:.06em;color:var(--roxo-esc);margin-bottom:5px}
+.arq b{display:block;font-family:var(--display);font-size:11.5px;font-weight:700;color:var(--tinta);line-height:1.25}
+.arq.puro{background:linear-gradient(160deg,#F1F2FE,#FBFBFF);border-color:rgba(81,83,212,.30)}
+
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:34px}
+@media(max-width:900px){.rel-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rel-grid{grid-template-columns:1fr}}
+.rel{padding:24px 22px;border-radius:14px;background:var(--branco2);border:1.5px solid var(--linha)}
+.rel-ic{font-size:21px;margin-bottom:11px}
+.rel h4{font-size:15px;font-weight:800;margin-bottom:7px}
+.rel p{font-size:13px;color:var(--apoio);line-height:1.6}
+
+.free-line{display:flex;gap:16px;align-items:flex-start;padding:24px 26px;border-radius:15px;
+  background:linear-gradient(120deg,rgba(81,83,212,.07),rgba(19,154,168,.05));
+  border:1.5px solid rgba(81,83,212,.24)}
+@media(max-width:560px){.free-line{flex-direction:column;gap:12px}}
+.fl-badge{flex:0 0 auto;font-family:var(--display);font-size:11px;font-weight:800;
+  letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:6px 13px;border-radius:100px;
+  background:linear-gradient(135deg,#1D6E49,#2E9E6B)}
+.fl-txt{font-size:13.5px;line-height:1.7;color:var(--texto)}
+.fl-txt b{color:var(--tinta)}
+
+/* ---------- INDICE DO METODO ---------- */
+.idx-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:940px){.idx-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.idx-grid{grid-template-columns:1fr}}
+.idx{display:block;padding:26px 22px;border-radius:15px;background:#fff;
+  border:1.5px solid var(--linha);box-shadow:0 2px 8px rgba(8,12,24,.05);
+  transition:.22s;position:relative;overflow:hidden}
+.idx::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--roxo),var(--teal-cl))}
+.idx:hover{transform:translateY(-4px);box-shadow:0 14px 38px rgba(81,83,212,.18);
+  border-color:rgba(81,83,212,.42)}
+.idx-n{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.11em;
+  color:var(--teal-md);display:block;margin-bottom:11px}
+.idx h3{font-size:16.5px;font-weight:800;color:var(--tinta);margin-bottom:8px;line-height:1.3}
+.idx p{font-size:13px;color:var(--apoio);line-height:1.6;margin-bottom:15px}
+.idx-go{font-family:var(--display);font-size:12.5px;font-weight:700;color:var(--roxo-esc)}
+
+/* ---------- BLOG ---------- */
+.cab{padding:64px 0 40px;position:relative;overflow:hidden}
+.cab::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(60% 70% at 20% 0%,rgba(81,83,212,.16),transparent 64%),
+             radial-gradient(50% 60% at 88% 8%,rgba(19,154,168,.13),transparent 62%)}
+.cab-in{position:relative;z-index:1}
+.cab h1{font-size:clamp(28px,3.8vw,46px);font-weight:800;line-height:1.1}
+.cab p{color:var(--apoio);font-size:16.5px;margin-top:15px;max-width:640px}
+.crumb{font-size:12.5px;color:var(--apoio);margin-bottom:16px}
+.crumb a:hover{color:var(--roxo-esc)}
+
+/* ---- grade de artigos ---- */
+.aut-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+@media(max-width:900px){.aut-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.aut-grid{grid-template-columns:1fr}}
+.aut{display:flex;flex-direction:column;padding:26px 24px;border-radius:16px;background:#fff;
+  border:1.5px solid var(--linha);box-shadow:0 2px 8px rgba(8,12,24,.05);transition:.22s}
+.aut:hover{transform:translateY(-4px);box-shadow:0 14px 38px rgba(81,83,212,.17);
+  border-color:rgba(81,83,212,.40)}
+.aut-tema{font-family:var(--display);font-size:10.5px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--roxo-esc);margin-bottom:11px}
+.aut h2,.aut h3{font-size:17px;font-weight:800;line-height:1.32;color:var(--tinta);margin-bottom:9px}
+.aut p{font-size:13px;color:var(--apoio);line-height:1.6;flex:1}
+.aut-meta{font-size:11.5px;color:#7C8798;margin-top:14px;padding-top:12px;
+  border-top:1px solid var(--linha)}
+
+/* ---- chips de tema ---- */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:100px;background:#fff;
+  border:1.5px solid var(--linha);color:var(--texto);transition:.18s}
+.chip:hover{border-color:var(--roxo-cl);color:var(--roxo-esc)}
+.chip.on{background:linear-gradient(135deg,var(--roxo-esc),var(--roxo));color:#fff;border-color:transparent}
+
+/* ---- layout da materia: 2 colunas ---- */
+.mat-wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:46px;
+  padding:44px 0 80px;align-items:start}
+@media(max-width:980px){.mat-wrap{grid-template-columns:1fr;gap:32px}}
+
+.mat h1{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.14;margin-bottom:16px}
+.mat-lead{font-size:17px;color:var(--texto);line-height:1.65;margin-bottom:22px;
+  padding-left:18px;border-left:3px solid var(--roxo-cl)}
+.mat-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#7C8798;
+  margin-bottom:30px;padding-bottom:22px;border-bottom:1px solid var(--linha)}
+
+/* sumário clicável */
+.sumario{background:var(--branco2);border:1.5px solid var(--linha);border-radius:14px;
+  padding:22px 24px;margin-bottom:36px}
+.sumario-t{font-family:var(--display);font-size:10.5px;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--apoio);margin-bottom:13px}
+.sumario ol{list-style:none;counter-reset:s}
+.sumario li{counter-increment:s;margin-bottom:9px;font-size:14px}
+.sumario li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);
+  font-size:10.5px;font-weight:800;color:var(--roxo-cl);margin-right:10px}
+.sumario a{color:var(--texto)}
+.sumario a:hover{color:var(--roxo-esc)}
+
+.mat h2{font-size:22px;font-weight:800;margin:34px 0 13px;color:var(--tinta);scroll-margin-top:90px}
+.mat p{font-size:15.5px;line-height:1.78;color:var(--texto);margin-bottom:16px}
+
+/* cartão CTA no meio/fim */
+.cta-card{margin:34px 0;padding:28px 26px;border-radius:16px;
+  background:linear-gradient(140deg,rgba(81,83,212,.09),rgba(19,154,168,.06));
+  border:1.5px solid rgba(81,83,212,.26)}
+.cta-card h3{font-size:18px;font-weight:800;margin-bottom:9px}
+.cta-card p{font-size:14px;color:var(--apoio);margin-bottom:17px;line-height:1.6}
+.cta-card .btn{padding:12px 22px;font-size:14px}
+
+/* ---- barra lateral ---- */
+.lat{position:sticky;top:88px;display:flex;flex-direction:column;gap:22px}
+@media(max-width:980px){.lat{position:static}}
+.lat-bloco{background:#fff;border:1.5px solid var(--linha);border-radius:14px;
+  padding:20px;box-shadow:0 2px 8px rgba(8,12,24,.04)}
+.lat-t{font-family:var(--display);font-size:10.5px;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--apoio);margin-bottom:13px}
+.lat-temas{list-style:none}
+.lat-temas li{margin-bottom:3px}
+.lat-temas a{display:block;font-size:13.5px;padding:8px 11px;border-radius:8px;
+  color:var(--texto);transition:.16s}
+.lat-temas a:hover{background:var(--gelo);color:var(--roxo-esc)}
+.lat-temas a.on{background:linear-gradient(135deg,rgba(81,83,212,.11),rgba(19,154,168,.07));
+  color:var(--roxo-esc);font-weight:700}
+.lat-mais{list-style:none}
+.lat-mais li{margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--linha)}
+.lat-mais li:last-child{border:0;margin:0;padding:0}
+.lat-mais a{font-size:13px;font-weight:600;color:var(--texto);line-height:1.45;display:block}
+.lat-mais a:hover{color:var(--roxo-esc)}
+.lat-mais span{display:block;font-size:11px;color:#7C8798;margin-top:3px}
+.lat-akxo{background:linear-gradient(150deg,#0B1030,#063C4A);border:0}
+.lat-akxo .lat-t{color:#8FB4FF}
+.lat-akxo p{font-size:12.5px;color:#B6C6D8;line-height:1.6;margin-bottom:14px}
+.lat-akxo a.btn{display:block;text-align:center;padding:11px;font-size:13px;
+  background:linear-gradient(135deg,var(--roxo-esc),var(--roxo));color:#fff;border-radius:9px;
+  font-family:var(--display);font-weight:700}
+
+/* continue lendo */
+.cont-lendo{margin-top:52px;padding-top:34px;border-top:1px solid var(--linha)}
+.cont-lendo h3{font-size:19px;font-weight:800;margin-bottom:20px}
+.cont-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:700px){.cont-grid{grid-template-columns:1fr}}
+.cont{display:block;padding:18px;border-radius:12px;background:var(--branco2);
+  border:1.5px solid var(--linha);transition:.18s}
+.cont:hover{border-color:var(--roxo-cl);background:#fff}
+.cont b{display:block;font-family:var(--display);font-size:13.5px;font-weight:700;
+  color:var(--tinta);line-height:1.4;margin-bottom:6px}
+.cont span{font-size:11px;color:#7C8798}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap nav-in">
+  <a href="../index.html"><img class="lg" src="../assets/logo-full.svg" alt="AKXO"></a>
+  <div class="nav-links">
+    <a href="../index.html#nao-e">O que é</a>
+    <a href="../metodo.html">O método</a>
+    <a href="index.html">Conteúdos</a>
+    <a href="../index.html#portas">Para você</a>
+  </div>
+  <a class="nav-cta" href="https://app-dev.akxo.com.br">Passe pela catraca</a>
+</div></nav>
+
+<div class="cab"><div class="wrap cab-in">
+  <div class="crumb"><a href="../index.html">AKXO</a> · <a href="index.html">Conteúdos</a> ·
+    <a href="tema-metodo.html">Prática e método AKXO</a></div>
+  <h1>Por que saber o que fazer não significa conseguir fazer?</h1>
+</div></div>
+
+<div class="wrap"><div class="mat-wrap">
+  <article class="mat">
+    <p class="mat-lead">O conhecimento muda o que você entende. Não muda o que você faz no momento em que a situação aperta.</p>
+    <div class="mat-meta"><span>Prática e método AKXO</span><span>7 min de leitura</span></div>
+
+    <div class="chips">
+<a class="chip" href="index.html">Todos</a>
+<a class="chip" href="tema-comunicacao.html">Comunicação e relacionamentos</a>
+<a class="chip" href="tema-lideranca.html">Liderança e equipes</a>
+<a class="chip" href="tema-emocional.html">Inteligência emocional</a>
+<a class="chip" href="tema-habitos.html">Hábitos, disciplina e foco</a>
+<a class="chip" href="tema-confianca.html">Confiança e carreira</a>
+<a class="chip on" href="tema-metodo.html">Prática e método AKXO</a>
+</div>
+
+    <div class="sumario" style="margin-top:26px">
+      <div class="sumario-t">Neste artigo</div>
+      <ol><li><a href="#s1">A distância entre intenção e ação</a></li>
+<li><a href="#s2">O que o cérebro faz quando você repete</a></li>
+<li><a href="#s3">Por que mais conteúdo não resolve</a></li>
+<li><a href="#s4">O papel da reflexão</a></li>
+<li><a href="#s5">O que muda a prática</a></li></ol>
+    </div>
+
+    <h2 id="s1">A distância entre intenção e ação</h2>
+<p>Você sabe exatamente o que deveria ter dito naquela reunião. Sabe que precisava colocar um limite. Sabe que não era o momento de perder a paciência. E, na hora, o corpo fez outra coisa.</p><h2 id="s2">O que o cérebro faz quando você repete</h2>
+<p>A repetição deliberada fortalece vias neurais por plasticidade sináptica e mielinização: a transmissão fica mais rápida e exige menos esforço consciente. O resultado prático é a automatização — o comportamento deixa de depender de você lembrar de agir.</p><h2 id="s3">Por que mais conteúdo não resolve</h2>
+<p>Consumir conteúdo aumenta o que você sabe. Não aumenta o que você consegue fazer sob pressão, porque acessar um conceito e executar um comportamento são processos diferentes. É a razão pela qual a maioria dos cursos termina sem mudança observável.</p><div class="cta-card">
+        <h3>Você já sabe o que fazer. Falta treinar.</h3>
+        <p>Na AKXO, comportamento é musculatura — e musculatura se treina em 7 minutos por dia,
+           com evolução medida em número.</p>
+        <a class="btn btn-pri" href="https://app-dev.akxo.com.br">Passe pela catraca</a>
+      </div><h2 id="s4">O papel da reflexão</h2>
+<p>A reflexão depois da prática real é o que transforma experiência em capacidade transferível. Sem ela, você automatiza o comportamento específico daquela situação, mas não a capacidade de agir em outra parecida.</p><h2 id="s5">O que muda a prática</h2>
+<p>Dose pequena, todo dia, em situação real, com reflexão depois. É por isso que o treino é distribuído e não intensivo: prática distribuída produz mais resultado que sessões longas e esporádicas.</p>
+
+    <div class="cta-card">
+      <h3>Experimente agora</h3>
+      <p>Faça o mapeamento comportamental e descubra qual músculo está mais ativado em você —
+         e o que está atrofiado por causa disso. O teste é gratuito.</p>
+      <a class="btn btn-pri" href="https://app-dev.akxo.com.br">Comece seu primeiro treino</a>
+    </div>
+
+    <div class="cont-lendo">
+      <h3>Continue lendo</h3>
+      <div class="cont-grid"><a class="cont" href="o-que-sao-habilidades-comportamentais.html"><b>O que são habilidades comportamentais?</b>
+        <span>Prática e método AKXO · 6 min</span></a>
+<a class="cont" href="inteligencia-emocional-no-dia-a-dia.html"><b>Como melhorar a inteligência emocional no dia a dia?</b>
+        <span>Inteligência emocional · 6 min</span></a>
+<a class="cont" href="comunicacao-no-trabalho.html"><b>Como melhorar a comunicação no trabalho?</b>
+        <span>Comunicação e relacionamentos · 6 min</span></a></div>
+    </div>
+  </article>
+
+  <aside class="lat">
+    <div class="lat-bloco">
+      <div class="lat-t">Explore por tema</div>
+      <ul class="lat-temas">
+        <li><a href="tema-comunicacao.html">Comunicação e relacionamentos</a></li><li><a href="tema-lideranca.html">Liderança e equipes</a></li><li><a href="tema-emocional.html">Inteligência emocional</a></li><li><a href="tema-habitos.html">Hábitos, disciplina e foco</a></li><li><a href="tema-confianca.html">Confiança e carreira</a></li><li><a href="tema-metodo.html" class=on>Prática e método AKXO</a></li>
+      </ul>
+    </div>
+    <div class="lat-bloco">
+      <div class="lat-t">Mais lidas neste tema</div>
+      <ul class="lat-mais"><li><a href="o-que-sao-habilidades-comportamentais.html">O que são habilidades comportamentais?</a><span>6 min</span></li>
+<li><a href="inteligencia-emocional-no-dia-a-dia.html">Como melhorar a inteligência emocional no dia a dia?</a><span>6 min</span></li>
+<li><a href="comunicacao-no-trabalho.html">Como melhorar a comunicação no trabalho?</a><span>6 min</span></li></ul>
+    </div>
+    <div class="lat-bloco lat-akxo">
+      <div class="lat-t">Comece seu primeiro treino</div>
+      <p>7 minutos por dia. Comportamento também é músculo.</p>
+      <a class="btn" href="https://app-dev.akxo.com.br">Passe pela catraca</a>
+    </div>
+  </aside>
+</div></div>
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <img class="lg" src="../assets/logo-branca.svg" alt="AKXO">
+      <div class="selo-mini">1ª do mundo</div>
+      <p>Academia de Musculatura Comportamental. Treinos curtos para transformar
+        o que você sabe em como você age.</p>
+    </div>
+    <div><h5>O método</h5><ul>
+      <li><a href="../metodo.html#mapeamento">Mapeamento comportamental</a></li>
+      <li><a href="../metodo.html#motor">Maratona · Espelho · Pulso</a></li>
+      <li><a href="../metodo.html#pulso">Akxopulso</a></li>
+      <li><a href="../metodo.html#neuro">Base científica</a></li>
+    </ul></div>
+    <div><h5>Conteúdos</h5><ul>
+      <li><a href="tema-comunicacao.html">Comunicação e relacionamentos</a></li>
+      <li><a href="tema-lideranca.html">Liderança e equipes</a></li>
+      <li><a href="tema-emocional.html">Inteligência emocional</a></li>
+      <li><a href="tema-habitos.html">Hábitos, disciplina e foco</a></li>
+      <li><a href="tema-confianca.html">Confiança e carreira</a></li>
+      <li><a href="tema-metodo.html">Prática e método AKXO</a></li>
+    </ul></div>
+    <div><h5>Contato</h5><ul>
+      <li><a href="mailto:contato@akxo.com.br">contato@akxo.com.br</a></li>
+    </ul></div>
+  </div>
+  <div class="legal">
+    <span>© 2026 AKXO — Academia de Musculatura Comportamental</span>
+    <span>Feito no Brasil</span>
+  </div>
+</div></footer>
+<div class="revisao">MODELO · blog · revisão 1</div>
+</body>
+</html>

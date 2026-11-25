@@ -1,4 +1,2 @@
-# Netlify redirects for Single Page Application (SPA)
-# This ensures that all routes are handled by React Router
-/*    /index.html   200
-
+# Site com paginas reais. Sem redirect de SPA.
+https://www.akxo.com.br/*  https://akxo.com.br/:splat  301!
