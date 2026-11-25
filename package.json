@@ -1,0 +1,11 @@
+{
+  "name": "akxo-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da AKXO - estatico, sem etapa de build",
+  "scripts": {
+    "build": "echo 'Site estatico: nada a compilar'",
+    "dev": "echo 'Site estatico'",
+    "start": "echo 'Site estatico'"
+  }
+}
