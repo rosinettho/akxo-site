@@ -1,20 +1,17 @@
+# AKXO — site estatico. Nao ha etapa de build: o que esta na raiz e o que
+# vai ao ar. Qualquer plugin ou comando de npm aqui SO quebra o deploy.
+
 [build]
   publish = "."
-  command = "echo 'Site estatico AKXO - sem etapa de build'"
+  command = ""
+
+# Sem NODE_VERSION de proposito. O projeto tem heranca de plugins do Manus
+# (strapi-plugin-netlify-deployments -> sharp -> node-gyp) que compila codigo
+# nativo e exige Node <= 18. Fixar Node 20, como eu fiz antes, quebra o build.
+# Como nao ha nada para compilar, nao ha por que declarar versao de Node.
 
 [build.environment]
-  NODE_VERSION = "20"
-
-# O repositorio tem PAGINAS REAIS (index, metodo, blog/*) e nenhum passo de
-# build. Qualquer comando de npm aqui falha, porque o repo NAO tem package.json.
-# Este bloco precisa continuar com o publish em "." — o Netlify publica o que
-# esta na raiz do repositorio.
-
-[[redirects]]
-  from = "https://www.akxo.com.br/*"
-  to = "https://akxo.com.br/:splat"
-  status = 301
-  force = true
+  NPM_FLAGS = "--no-audit --no-fund"
 
 [[headers]]
   for = "/*"
@@ -33,3 +30,9 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+  from = "https://www.akxo.com.br/*"
+  to = "https://akxo.com.br/:splat"
+  status = 301
+  force = true
