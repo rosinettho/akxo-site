@@ -1,16 +1,22 @@
 # AKXO - site estatico. Nao ha etapa de build: o que esta na raiz vai ao ar.
 #
-# NODE_VERSION = 18 e OBRIGATORIO: o projeto tem heranca de plugins do Manus
-# (strapi-plugin-netlify-deployments -> sharp -> node-gyp) que compila codigo
-# nativo e nao suporta Node 20. Fixar Node 20 quebra o deploy.
-# Como nao ha nada para compilar, o Node so serve para o plugin nao quebrar.
+# O projeto no Netlify tem 19 build plugins vindos do Manus (origem: ui).
+# Eles NAO podem ser removidos por arquivo - so pelo painel. Enquanto
+# estiverem la, o deploy precisa satisfaze-los:
+#   strapi-plugin-netlify-deployments -> @strapi/plugin-upload -> sharp@0.35.5
+#   sharp exige Node >= 20.9.0 (com Node 18 cai em compilacao nativa)
+#   a compilacao nativa usa node-gyp 7.1.2, que abre arquivo em modo 'rU'
+#   removido no Python 3.11+ (o ambiente entrega Python 3.14)
+# Por isso: Node 22 (sharp instala binario pronto, sem compilar) e
+# Python 3.11 (se ainda houver compilacao, node-gyp antigo funciona).
 
 [build]
   publish = "."
   command = ""
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
+  PYTHON_VERSION = "3.11"
   NPM_FLAGS = "--no-audit --no-fund"
 
 [[headers]]
