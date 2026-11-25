@@ -1,1 +1,2 @@
-IyBTaXRlIGNvbSBwYWdpbmFzIHJlYWlzLiBTZW0gcmVkaXJlY3QgZGUgU1BBLgpodHRwczovL3d3dy5ha3hvLmNvbS5ici8qICBodHRwczovL2FreG8uY29tLmJyLzpzcGxhdCAgMzAxIQo=
+# Site com paginas reais. Sem redirect de SPA.
+https://www.akxo.com.br/*  https://akxo.com.br/:splat  301!
